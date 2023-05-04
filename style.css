@@ -216,7 +216,18 @@ body {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
+#es-essentia.es-essentia .prev2, #es-essentia.es-essentia .next2 {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0%;
+  width: 40px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
 /* Position the "next button" to the right */
 #es-essentia.es-essentia .next {
   right: 0;
@@ -237,6 +248,22 @@ body {
 }
 
 #es-essentia.es-essentia .active, #es-essentia.es-essentia .es-dot:hover {
+  background-color: #425505;
+}
+
+#es-essentia.es-essentia .es-dot2 {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 2px;
+  background-color: #fff;
+  border: 2px solid #425505;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+#es-essentia.es-essentia .active, #es-essentia.es-essentia .es-dot2:hover {
   background-color: #425505;
 }
 

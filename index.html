@@ -433,21 +433,21 @@
           </div>
         
              <!-- Next and previous buttons -->
-             <a class="prev" onclick="plusSlides(-1,1)">
+             <a class="prev prev2" onclick="plusSlides(-1,1)">
               <img src="https://dl.dropboxusercontent.com/s/t4w62tnrrs4tpoh/arrow-left.png?dl=0" alt="">
             </a>
-            <a class="next" onclick="plusSlides(1,1)">
+            <a class="next next2" onclick="plusSlides(1,1)">
             <img src="https://dl.dropboxusercontent.com/s/g424fpplslyzc5t/arrow-right.png?dl=0" alt="">
           </a>
         </div>
         <br>
         
         <!-- The dots/circles -->
-        <div style="text-align:center">
-          <span class="es-dot" onclick="currentSlide(1,1)"></span>
-          <span class="es-dot" onclick="currentSlide(2,1)"></span>
-          <span class="es-dot" onclick="currentSlide(3,1)"></span>
-          <span class="es-dot" onclick="currentSlide(4,1)"></span>
+        <div class="es-dot2Ctn" style="text-align:center">
+          <span class="es-dot2" onclick="currentSlide(1,1)"></span>
+          <span class="es-dot2" onclick="currentSlide(2,1)"></span>
+          <span class="es-dot2" onclick="currentSlide(3,1)"></span>
+          <span class="es-dot2" onclick="currentSlide(4,1)"></span>
         </div>
       </div>
 
@@ -733,6 +733,7 @@
 let slideIndex = [1,1];
 /* Class the members of each slideshow group with different CSS classes */
 let slideId = ["es-mySlides", "es-mySlides2"]
+let dotsId = ["es-dots", "es-dots2"]
 showSlides(1, 0);
 showSlides(1, 1);
 
@@ -748,15 +749,23 @@ function currentSlide(n, no) {
 function showSlides(n, no) {
   let i;
   let x = document.getElementsByClassName(slideId[no]);
+  let dots = document.getElementsByClassName(dotsId[no]);
   if (n > x.length) {slideIndex[no] = 1}
   if (n < 1) {slideIndex[no] = x.length}
+
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
-
-
   x[slideIndex[no]-1].style.display = "block";
-  //dots[slideIndex[no]-1].className += "active";
+  
+  if (n > dots.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = dots.length}
+  for (i = 0; i < dots.length; i++) {
+   // dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+
+ // dots[slideIndex[no]-1].className += "active";
 }
 </script>
 

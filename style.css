@@ -250,7 +250,9 @@ body {
 #es-essentia.es-essentia .active, #es-essentia.es-essentia .es-dot:hover {
   background-color: #425505;
 }
-
+#es-essentia.es-essentia .es-dot2Ctn{
+  text-align:center
+}
 #es-essentia.es-essentia .es-dot2 {
   cursor: pointer;
   height: 20px;

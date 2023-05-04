@@ -222,10 +222,10 @@
         
         <!-- The dots/circles -->
         <div style="text-align:center">
-          <span class="es-dot" onclick="currentSlide(1,0)"></span>
-          <span class="es-dot" onclick="currentSlide(2,0)"></span>
-          <span class="es-dot" onclick="currentSlide(3,0)"></span>
-          <span class="es-dot" onclick="currentSlide(4,0)"></span>
+          <a class="es-dot" onclick="currentSlide(1,0)"></a>
+          <a class="es-dot" onclick="currentSlide(2,0)"></a>
+          <a class="es-dot" onclick="currentSlide(3,0)"></a>
+          <a class="es-dot" onclick="currentSlide(4,0)"></a>
         </div>
       </div>
 
@@ -443,11 +443,11 @@
         <br>
         
         <!-- The dots/circles -->
-        <div class="es-dot2Ctn" style="text-align:center">
-          <span class="es-dot2" onclick="currentSlide(1,1)"></span>
-          <span class="es-dot2" onclick="currentSlide(2,1)"></span>
-          <span class="es-dot2" onclick="currentSlide(3,1)"></span>
-          <span class="es-dot2" onclick="currentSlide(4,1)"></span>
+        <div class="es-dot2Ctn">
+          <a class="es-dot2" onclick="currentSlide(1,1)"></a>
+          <a class="es-dot2" onclick="currentSlide(2,1)"></a>
+          <a class="es-dot2" onclick="currentSlide(3,1)"></a>
+          <a class="es-dot2" onclick="currentSlide(4,1)"></a>
         </div>
       </div>
 
@@ -733,7 +733,7 @@
 let slideIndex = [1,1];
 /* Class the members of each slideshow group with different CSS classes */
 let slideId = ["es-mySlides", "es-mySlides2"]
-let dotsId = ["es-dots", "es-dots2"]
+let dotsId = ["es-dot", "es-dot2"]
 showSlides(1, 0);
 showSlides(1, 1);
 
@@ -755,17 +755,16 @@ function showSlides(n, no) {
 
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
+    
   }
   x[slideIndex[no]-1].style.display = "block";
   
   if (n > dots.length) {slideIndex[no] = 1}
   if (n < 1) {slideIndex[no] = dots.length}
   for (i = 0; i < dots.length; i++) {
-   // dots[i].className = dots[i].className.replace(" active", "");
+  //dots[i].className = dots[i].classList.replace("active", " ");
   }
-
-
- // dots[slideIndex[no]-1].className += "active";
+//dots[slideIndex[no]-1].classList += "active";
 }
 </script>
 

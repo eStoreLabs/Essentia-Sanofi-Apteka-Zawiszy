@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="es-essentia" id="es-essentia">
@@ -95,114 +96,137 @@
           </p>
         </div>
       </div>
-
       <div id="korzysci" class="es-support">
         <p class="es-support__title">Proaktywne wsparcie prawidłowego <br> funkcjonowania:</p>
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="es-support__content">
-              <div class="es-support__items">
-                <div class="es-support__item">
-                  <img
-                    src="https://dl.dropboxusercontent.com/s/ekjukjb8cjdr70f/support-1.png?dl=0"
-                    alt="Ilustracja wątroby, obok informacja o oczyszczaniu organizmu; Essentia Proactive wspomaga proces detoksykacji organizmu."
-                    class="es-support__icon"/>
-                  <p class="es-support__text">wątroby, w tym detoksykacji<sup>3</sup></p>
-                </div>
-                <div class="es-support__item">
-                  <img
-                    src="https://dl.dropboxusercontent.com/s/m6vfg1lnskotst2/support-2.png?dl=0"
-                    alt="Ilustracja komórek w organizmie; cholina zawarta w Essentia Proactive wspomaga transportowanie tłuszczów i cholesterolu."
-                    class="es-support__icon"/>
-                  <p class="es-support__text">metabolizmu tłuszczów<sup>1</sup></p>
-                </div>
-                <div class="es-support__item es-support__item--full">
-                  <img
-                    src="https://dl.dropboxusercontent.com/s/da0wsknv2lpe9p4/support-3.png?dl=0"
-                    alt="Witaminy C i E to antyoksydanty, które dbają o zdrowie wątroby i pomagają chronić Twój organizm przed stresem oksydacyjnym."
-                    class="es-support__icon"/>
-                  <p class="es-support__text">
-                    ochrona komórek przed <br>
-                    stresem oksydacyjnym<sup>5</sup>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="es-support__content">
-              <div class="es-support__items">
-                <div class="es-support__item es-support__item--single">
-                  <img
-                    src="https://dl.dropboxusercontent.com/s/ekjukjb8cjdr70f/support-1.png?dl=0"
-                    alt="Ilustracja wątroby, obok informacja o oczyszczaniu wątroby. Essentia Proactive wspomaga proces detoksykacji w organizmie."
-                    class="es-support__icon es-support__icon--big"/>
-                  <div class="es-support__text-wrapper">
-                    <p class="es-support__subtitle">wątroby, w tym
-                      detoksykcji<sup>3</sup> </p>
-                    <div class="es-support__description">
-                      <p class="es-support__desc">
-                        Cholina wspomaga funkcje wątroby, takie jak proces
-                        detoksykacji organizmu.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="es-support__content">
-              <div class="es-support__items">
-                <div class="es-support__item es-support__item--single">
-                  <img
-                    src="https://dl.dropboxusercontent.com/s/m6vfg1lnskotst2/support-2.png?dl=0"
-                    alt="Ilustracja komórek w organizmie, obok informacja o związku między choliną a metabolizmem tłuszczów."
-                    class="es-support__icon es-support__icon--big"
-                  />
-                  <div class="es-support__text-wrapper">
-                    <p class="es-support__subtitle">metabolizm tłuszczów<sup>1</sup> </p>
-                    <div class="es-support__description">
-                      <p class="es-support__desc">
-                        Cholina wspomaga transportowanie tłuszczów
-                        i&nbsp;cholesterolu w&nbsp;organizmie.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="es-support__content">
-              <div class="es-support__items">
-                <div class="es-support__item es-support__item--single">
-                  <img
-                    src="https://dl.dropboxusercontent.com/s/da0wsknv2lpe9p4/support-3.png?dl=0"
-                    alt="Ilustracja tarczy i informacja, jak suplement na wątrobę wpływa na wolne rodniki, chroniąc przed stresem oksydacyjnym."
-                    class="es-support__icon es-support__icon--big"/>
-                  <div class="es-support__text-wrapper">
-                    <p class="es-support__subtitle">
-                      ochrona komórek przed stresem oksydacyjnym<sup>5</sup>
-                    </p>
-                    <div class="es-support__description">
-                      <p class="es-support__desc">
-                        Zawiera potężne antyoksydanty, witaminę C i E, aby
-                        chronić Twój organizm przed nadmiarem wolnych rodników.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+        <div class="slideshow-container">
 
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+          <!-- Full-width images with number and caption text -->
+          <div class="es-mySlides fade">
+            <div class="swiper-slide">
+              <div class="es-support__content">
+                <div class="es-support__items">
+                  <div class="es-support__item">
+                    <img
+                      src="https://dl.dropboxusercontent.com/s/ekjukjb8cjdr70f/support-1.png?dl=0"
+                      alt="Ilustracja wątroby, obok informacja o oczyszczaniu organizmu; Essentia Proactive wspomaga proces detoksykacji organizmu."
+                      class="es-support__icon"/>
+                    <p class="es-support__text">wątroby, w tym detoksykacji<sup>3</sup></p>
+                  </div>
+                  <div class="es-support__item">
+                    <img
+                      src="https://dl.dropboxusercontent.com/s/m6vfg1lnskotst2/support-2.png?dl=0"
+                      alt="Ilustracja komórek w organizmie; cholina zawarta w Essentia Proactive wspomaga transportowanie tłuszczów i cholesterolu."
+                      class="es-support__icon"/>
+                    <p class="es-support__text">metabolizmu tłuszczów<sup>1</sup></p>
+                  </div>
+                  <div class="es-support__item es-support__item--full">
+                    <img
+                      src="https://dl.dropboxusercontent.com/s/da0wsknv2lpe9p4/support-3.png?dl=0"
+                      alt="Witaminy C i E to antyoksydanty, które dbają o zdrowie wątroby i pomagają chronić Twój organizm przed stresem oksydacyjnym."
+                      class="es-support__icon"/>
+                    <p class="es-support__text">
+                      ochrona komórek przed <br>
+                      stresem oksydacyjnym<sup>5</sup>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="es-mySlides fade">
+            <div class="swiper-slide">
+              <div class="es-support__content">
+                <div class="es-support__items">
+                  <div class="es-support__item es-support__item--single">
+                    <img
+                      src="https://dl.dropboxusercontent.com/s/ekjukjb8cjdr70f/support-1.png?dl=0"
+                      alt="Ilustracja wątroby, obok informacja o oczyszczaniu wątroby. Essentia Proactive wspomaga proces detoksykacji w organizmie."
+                      class="es-support__icon es-support__icon--big"/>
+                    <div class="es-support__text-wrapper">
+                      <p class="es-support__subtitle">wątroby, w tym
+                        detoksykacji<sup>3</sup> </p>
+                      <div class="es-support__description">
+                        <p class="es-support__desc">
+                          Cholina wspomaga funkcje wątroby, takie jak proces
+                          detoksykacji organizmu.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="es-mySlides fade">
+            <div class="swiper-slide">
+              <div class="es-support__content">
+                <div class="es-support__items">
+                  <div class="es-support__item es-support__item--single">
+                    <img
+                      src="https://dl.dropboxusercontent.com/s/m6vfg1lnskotst2/support-2.png?dl=0"
+                      alt="Ilustracja komórek w organizmie, obok informacja o związku między choliną a metabolizmem tłuszczów."
+                      class="es-support__icon es-support__icon--big"
+                    />
+                    <div class="es-support__text-wrapper">
+                      <p class="es-support__subtitle">metabolizm tłuszczów<sup>1</sup> </p>
+                      <div class="es-support__description">
+                        <p class="es-support__desc">
+                          Cholina wspomaga transportowanie tłuszczów
+                          i&nbsp;cholesterolu w&nbsp;organizmie.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="es-mySlides fade">
+            <div class="swiper-slide">
+              <div class="es-support__content">
+                <div class="es-support__items">
+                  <div class="es-support__item es-support__item--single">
+                    <img
+                      src="https://dl.dropboxusercontent.com/s/da0wsknv2lpe9p4/support-3.png?dl=0"
+                      alt="Ilustracja tarczy i informacja, jak suplement na wątrobę wpływa na wolne rodniki, chroniąc przed stresem oksydacyjnym."
+                      class="es-support__icon es-support__icon--big"/>
+                    <div class="es-support__text-wrapper">
+                      <p class="es-support__subtitle">
+                        ochrona komórek przed stresem oksydacyjnym<sup>5</sup>
+                      </p>
+                      <div class="es-support__description">
+                        <p class="es-support__desc">
+                          Zawiera potężne antyoksydanty, witaminę C i E, aby
+                          chronić Twój organizm przed nadmiarem wolnych rodników.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1,0)">
+            <img src="https://dl.dropboxusercontent.com/s/t4w62tnrrs4tpoh/arrow-left.png?dl=0" alt="">
+          </a>
+          <a class="next" onclick="plusSlides(1,0)">
+          <img src="https://dl.dropboxusercontent.com/s/g424fpplslyzc5t/arrow-right.png?dl=0" alt="">
+        </a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="es-dot" onclick="currentSlide(1,0)"></span>
+          <span class="es-dot" onclick="currentSlide(2,0)"></span>
+          <span class="es-dot" onclick="currentSlide(3,0)"></span>
+          <span class="es-dot" onclick="currentSlide(4,0)"></span>
+        </div>
       </div>
 
       <div id="styl" class="es-info">
@@ -210,43 +234,36 @@
         <div thumbsSlider="" class="swiper swiperNav">
           <div class="swiper-wrapper es-info__nav">
             <div class="swiper-slide es-info__nav-item">
-              <p class="es-info__nav-text">
-                Zachowuj aktywny<br />
-                tryb życia
-              </p>
               <a href="#aktywny" class="es-info__link"
+              onclick="currentSlide(1,1)"
                 >Zachowuj aktywny<br />
                 tryb życia</a>
             </div>
             <div class="swiper-slide es-info__nav-item">
-              <p class="es-info__nav-text">
-                Wspieraj swój <br>
-                metabolizm
-              </p>
-              <a href="#metabolizm" class="es-info__link">Wspieraj swój <br>metabolizm</a>
+              <a href="#metabolizm" class="es-info__link"
+              onclick="currentSlide(2,1)"
+              >Wspieraj swój <br>metabolizm</a>
             </div>
             <div class="swiper-slide es-info__nav-item">
-              <p class="es-info__nav-text">
-                Utrzymaj poziom <br>
-                energii
-              </p>
-              <a href="#energia" class="es-info__link">Utrzymaj poziom <br>energii</a>
+              <a href="#energia" class="es-info__link"
+              onclick="currentSlide(3,1)"
+              >Utrzymaj poziom <br>energii</a>
             </div>
             <div class="swiper-slide es-info__nav-item">
-              <p class="es-info__nav-text">
-                Wspieraj wątrobę <br>
-                w procesie <br>
-                detoksykacji
-              </p>
               <a href="#detoks" class="es-info__link"
+              onclick="currentSlide(4,1)"
                 >Wspieraj wątrobę <br>
                 w procesie <br>
                 detoksykacji</a>
             </div>
           </div>
         </div>
-        <div id="jak-dbac" class="swiper swiper2">
-          <div class="swiper-wrapper">
+
+        <div id="jak-dbac" class="swiper swiper2"></div>
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="es-mySlides2 fade">
             <div class="swiper-slide">
               <div id="aktywny" class="es-info__slide">
                 <div class="es-info__up">
@@ -288,6 +305,9 @@
                 </div>
               </div>
             </div>
+          </div>
+        
+          <div class="es-mySlides2 fade">
             <div class="swiper-slide">
               <div id="metabolizm" class="es-info__slide">
                 <div class="es-info__up">
@@ -330,6 +350,9 @@
                 </div>
               </div>
             </div>
+          </div>
+        
+          <div class="es-mySlides2 fade">
             <div class="swiper-slide">
               <div id="energia" class="es-info__slide">
                 <div class="es-info__up">
@@ -369,6 +392,9 @@
                 </div>
               </div>
             </div>
+          </div>
+
+          <div class="es-mySlides2 fade">
             <div class="swiper-slide">
               <div id="detoks" class="es-info__slide">
                 <div class="es-info__up">
@@ -405,9 +431,23 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
+        
+             <!-- Next and previous buttons -->
+             <a class="prev" onclick="plusSlides(-1,1)">
+              <img src="https://dl.dropboxusercontent.com/s/t4w62tnrrs4tpoh/arrow-left.png?dl=0" alt="">
+            </a>
+            <a class="next" onclick="plusSlides(1,1)">
+            <img src="https://dl.dropboxusercontent.com/s/g424fpplslyzc5t/arrow-right.png?dl=0" alt="">
+          </a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="es-dot" onclick="currentSlide(1,1)"></span>
+          <span class="es-dot" onclick="currentSlide(2,1)"></span>
+          <span class="es-dot" onclick="currentSlide(3,1)"></span>
+          <span class="es-dot" onclick="currentSlide(4,1)"></span>
         </div>
       </div>
 
@@ -416,7 +456,7 @@
           <p class="es-dosage__title">Stosowanie</p>
           <p class="es-dosage__arrow">Rozwiń &darr;</p>
         </div>
-       <div class="es-dosage__mainCtn es-dosage__hide">
+       <div class="es-dosage__mainCtn es-hide">
         <div class="es-dosage__wrapper"> 
           <p class="es-dosage__text">
             Zalecana dawka dzienna dla dorosłych to 2 kapsułki raz dziennie.
@@ -451,7 +491,7 @@
           <p class="es-comp__title">Unikalny skład<sup>4</sup></p>
           <p class="es-comp__arrow"> Rozwiń &darr;</p>
         </div>
-       <div class="es-comp__hiddenCtn es-comp__hide">
+       <div class="es-comp__hiddenCtn es-hide">
         <div class="es-comp__content es-comp__content--mobile">
           <div class="es-comp__texts">
             <p class="es-comp__text">Zawartość składników w zalecanej porcji dziennej <br>
@@ -679,7 +719,7 @@
           farmaceutą.
         </p>
     </div>
-    <div class="es-disclaimer">obiec
+    <div class="es-disclaimer">
       <div class="es-disclaimer__bottom">
         <p class="es-disclaimer__mat">
           MAT-PL-2300611-2.0-04.2023
@@ -688,73 +728,55 @@
       </div>
     </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper('.es-support', {
-        loop: true,
+    <!-- slider js -->
+<script>
+let slideIndex = [1,1];
+/* Class the members of each slideshow group with different CSS classes */
+let slideId = ["es-mySlides", "es-mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
 
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true
-        },
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
 
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
-        },
+// Thumbnail image controls
+function currentSlide(n, no) {
+  showSlides(slideIndex[no] = n, no);
+}
 
-        scrollbar: {
-          el: '.swiper-scrollbar'
-        }
-      })
-    </script>
-    <!-- slider with navigation -->
-    <script>
-      // navigation
-      const swiperNav = new Swiper('.swiperNav', {
-        spaceBetween: 10,
-        slidesPerView: 4,
-      })
-      // slider
-      const swiper2 = new Swiper('.swiper2', {
-        loop: true,
-        spaceBetween: 10,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
-        },
-        thumbs: {
-          swiper: swiperNav
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true
-        }
-      })
-    </script>
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+
+
+  x[slideIndex[no]-1].style.display = "block";
+  //dots[slideIndex[no]-1].className += "active";
+}
+</script>
+
+    <!-- end of slider js -->
     <script>
       
-    const hiddenContent = document.querySelector('.es-comp__hiddenCtn')
-    const toggleBtn = document.querySelector('#es-comp__btn')
+      const hiddenContent = document.querySelector('.es-comp__hiddenCtn');
+    const toggleBtn = document.querySelector('.es-comp__btn');
+    const hiddenDosage = document.querySelector('.es-dosage__mainCtn');
+    const toggleBtnDosage = document.querySelector('.es-dosage__btn');
 
+    const toggleContent = (ctn)=> {
+      ctn.classList.toggle('es-hide');
+    }
 
-      toggleBtn.addEventListener('click', ()=>{
-        hiddenContent.classList.toggle('es-comp__hide');
-        
-        });
+    toggleBtn.addEventListener('click',()=> toggleContent(hiddenContent));
+    toggleBtnDosage.addEventListener('click',()=> toggleContent(hiddenDosage));
     </script>
-       <script>
-      
-        const hiddenDosage = document.querySelector('.es-dosage__mainCtn')
-        const toggleBtnDosage = document.querySelector('.es-dosage__btn')
-    
-    
-          toggleBtnDosage.addEventListener('click', ()=>{
-            hiddenDosage.classList.toggle('es-dosage__hide');
 
-            });
-        </script>
 
-<script> function getStyles(href) { var head = document.getElementsByTagName("head")[0]; var link = document.createElement("link"); link.rel = "stylesheet"; link.type = "text/css"; link.href = href; head.appendChild(link); } document.onreadystatechange = function () { if (document.readyState === "complete") { getStyles( "https://dl.dropboxusercontent.com/s/flcryll58a15mr2/style.css?dl=0" ); } }; </script>
+<!-- <script> function getStyles(href) { var head = document.getElementsByTagName("head")[0]; var link = document.createElement("link"); link.rel = "stylesheet"; link.type = "text/css"; link.href = href; head.appendChild(link); } document.onreadystatechange = function () { if (document.readyState === "complete") { getStyles( "https://dl.dropboxusercontent.com/s/flcryll58a15mr2/style.css?dl=0" ); } }; </script> -->
   </body>
 </html>

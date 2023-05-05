@@ -4,16 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Essentia</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -728,10 +718,8 @@
       </div>
     </div>
     </div>
-    <!-- slider js -->
 <script>
 let slideIndex = [1,1];
-/* Class the members of each slideshow group with different CSS classes */
 let slideId = ["es-mySlides", "es-mySlides2"]
 let dotId = ["es-dot", "es-dot2"]
 
@@ -748,6 +736,7 @@ function showSlides(n, no) {
   let i;
   let x = document.getElementsByClassName(slideId[no]);
   let dots = document.getElementsByClassName(dotId[no]);
+  
   if (n > x.length) {slideIndex[no] = 1}
   if (n < 1) {slideIndex[no] = x.length}
   for (i = 0; i < x.length; i++) {
@@ -760,22 +749,17 @@ function showSlides(n, no) {
   dots[slideIndex[no]-1].className += " active";
 }
 </script>
-
-    <!-- end of slider js -->
-    <script>
-      
-      const hiddenContent = document.querySelector('.es-comp__hiddenCtn');
+<script>
+    const hiddenContent = document.querySelector('.es-comp__hiddenCtn');
     const toggleBtn = document.querySelector('.es-comp__btn');
     const hiddenDosage = document.querySelector('.es-dosage__mainCtn');
     const toggleBtnDosage = document.querySelector('.es-dosage__btn');
-
     const toggleContent = (ctn)=> {
       ctn.classList.toggle('es-hide');
     }
-
     toggleBtn.addEventListener('click',()=> toggleContent(hiddenContent));
     toggleBtnDosage.addEventListener('click',()=> toggleContent(hiddenDosage));
-    </script>
+</script>
 
 
 <!-- <script> function getStyles(href) { var head = document.getElementsByTagName("head")[0]; var link = document.createElement("link"); link.rel = "stylesheet"; link.type = "text/css"; link.href = href; head.appendChild(link); } document.onreadystatechange = function () { if (document.readyState === "complete") { getStyles( "https://dl.dropboxusercontent.com/s/flcryll58a15mr2/style.css?dl=0" ); } }; </script> -->

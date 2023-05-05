@@ -1,13 +1,20 @@
 @font-face {
-  font-family: "ITCAvantGardeStd";
-  src: url("fonts/ITCAvantGardeStd-Bk.otf");
+  font-family: "Oswald-light";
+  src: url("https://dl.dropboxusercontent.com/s/76hurnmsgycrs3e/Oswald-Light.ttf?dl=0");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald-regular";
+  src: url("https://dl.dropboxusercontent.com/s/4yqb7crarpqjsnz/Oswald-Regular.ttf?dl=0");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: "ITCAvantGardeStd";
-  src: url("fonts/ITCAvantGardeStd-Bold.otf");
-  font-weight: 600;
+  font-family: "Oswald-bold";
+  src: url("https://dl.dropboxusercontent.com/s/d1h11g0g0ifwy2e/Oswald-Bold.ttf?dl=0");
+  font-weight: 400;
   font-style: normal;
 }
 html,
@@ -21,8 +28,7 @@ body {
 }
 
 #es-essentia.es-essentia {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
+  font-family: "Oswald-regular";
   font-size: 16px;
   line-height: 1.2;
   max-width: 998px;
@@ -153,11 +159,11 @@ body {
   font-size: 32px;
   text-transform: uppercase;
   font-style: italic;
-  font-weight: 500;
+  font-family: "Oswald-regular";
   transform: translateY(55%);
 }
 #es-essentia.es-essentia .es-kv__title span{
-  font-weight: 300;
+  font-family: "Oswald-light";
 }
 #es-essentia.es-essentia .es-kv__packshot {
   position: absolute;
@@ -181,7 +187,7 @@ body {
   width: calc(50% - 24px);
 }
 #es-essentia.es-essentia .es-features__title {
-  font-weight: 500;
+  font-family: "Oswald-regular";
   margin: 8px 0;
   font-size: 16px;
 }
@@ -211,7 +217,7 @@ body {
   width: 40px;
   margin-top: -22px;
   color: white;
-  font-weight: bold;
+  font-family: "Oswald-bold";
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -223,7 +229,7 @@ body {
   width: 40px;
   margin-top: -22px;
   color: white;
-  font-weight: bold;
+  font-family: "Oswald-bold";
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -255,7 +261,10 @@ body {
   z-index: 10;
   display: block;
   position: relative;
+  width: 80%;
+  margin:  0 auto;
   margin-top: -45px;
+
 }
 #es-essentia.es-essentia .es-dot2 {
   cursor: pointer;
@@ -304,7 +313,7 @@ body {
 }
 #es-essentia.es-essentia .es-support__title {
   padding: 12px;
-  font-weight: 500;
+  font-family: "Oswald-bold";
   color: #fff;
   font-size: 22px;
   margin-bottom: 16px;
@@ -338,7 +347,7 @@ body {
   color: #fff;
 }
 #es-essentia.es-essentia .es-support__desc {
-  font-weight: 300;
+  font-family: "Oswald-light";
 }
 #es-essentia.es-essentia .es-support__subtitle {
   color: #fff;
@@ -370,17 +379,17 @@ body {
 #es-essentia.es-essentia .es-dosage__arrow {
   font-size: 22px;
   color: #fff;
-  font-weight: 500;
+  font-family: "Oswald-bold";
 }
 #es-essentia.es-essentia .es-dosage__title {
-  font-weight: 500;
+  font-family: "Oswald-regular";
   font-size: 22px;
   color: #fff;
   margin-bottom: 16px;
 }
 #es-essentia.es-essentia .es-dosage__text {
   color: #fff;
-  font-weight: 300;
+  font-family: "Oswald-light";
   margin-bottom: 24px;
 }
 #es-essentia.es-essentia .es-dosage__mainCtn {
@@ -439,7 +448,10 @@ body {
   grid-template-columns: 50% 50%;
   gap: 14px;
 }
-#es-essentia.es-essentia .es-info__nav-item {
+
+#es-essentia.es-essentia .es-info__link {
+  text-decoration: none;
+  text-align: center;
   padding: 4px;
   border: 2px solid #506f13;
   width: 95% !important;
@@ -450,12 +462,17 @@ body {
   justify-content: center;
   margin: 0 !important;
   cursor: pointer;
-}
-
-#es-essentia.es-essentia .es-info__link {
-  text-decoration: none;
-  text-align: center;
   color: #000;
+  min-height: 80px;
+}
+#es-essentia.es-essentia .es-info__link:hover,
+#es-essentia.es-essentia .es-info__link:focus{
+  background-color: #425505;
+  color: #eaeaea;
+}
+#es-essentia.es-essentia .es-info__link:active{
+  background-color: #425505;
+  color: #eaeaea;
 }
 
 #es-essentia.es-essentia .es-info__up {
@@ -497,12 +514,12 @@ body {
 #es-essentia.es-essentia .es-info__title {
   color: #fff;
   font-size: 22px;
-  font-weight: 500;
+  font-family: "Oswald-bold";
   margin-bottom: 8px;
 }
 #es-essentia.es-essentia .es-info__text {
   color: #fff;
-  font-weight: 300;
+  font-family: "Oswald-light";
 }
 #es-essentia.es-essentia .es-info__text--doctor {
   max-width: 460px;
@@ -516,10 +533,11 @@ body {
 }
 #es-essentia.es-essentia .es-table__title {
   color: #506f13;
-  font-weight: 500;
+  font-family: "Oswald-bold";
   text-align: center;
   padding: 14px;
   font-size: 20px;
+  margin: 20px 0;
 }
 #es-essentia.es-essentia .es-table__wrapper {
   overflow-x: scroll;
@@ -615,7 +633,7 @@ body {
   text-align: center;
   padding: 8px 14px;
   border-radius: 50px;
-  font-weight: 500;
+  font-family: "Oswald-bold";
   margin: 14px auto;
 }
 #es-essentia.es-essentia .es-comp {
@@ -636,7 +654,7 @@ body {
 #es-essentia.es-essentia .es-comp__arrow {
   font-size: 22px;
   color: #fff;
-  font-weight: 500;
+  font-family: "Oswald-bold";
 }
 #es-essentia.es-essentia .es-comp__hiddenCtn {
   display: block;
@@ -649,7 +667,7 @@ body {
   font-size: 22px;
   margin-bottom: 20px;
   color: #fff;
-  font-weight: 500;
+  font-family: "Oswald-regular";
 }
 #es-essentia.es-essentia .es-comp__items {
   display: flex;
@@ -670,7 +688,7 @@ body {
 }
 #es-essentia.es-essentia .es-comp__text {
   color: #fff;
-  font-weight: 500;
+  font-family: "Oswald-bold";
   line-height: 1.5;
 }
 #es-essentia.es-essentia .es-comp__mg {
@@ -688,7 +706,7 @@ body {
 }
 #es-essentia.es-essentia .es-desc__item {
   color: #506f13;
-  font-weight: 300;
+  font-family: "Oswald-light";
   margin: 5px 0;
   font-size: 16px;
 }
@@ -699,14 +717,14 @@ body {
   font-size: 18px;
   margin-bottom: 8px;
   color: #506f13;
-  font-weight: 500;
+  font-family: "Oswald-bold";
 }
 #es-essentia.es-essentia .es-disclaimer__list {
   list-style: none;
 }
 #es-essentia.es-essentia .es-disclaimer__item {
   color: #506f13;
-  font-weight: 300;
+  font-family: "Oswald-light";
 }
 #es-essentia.es-essentia .es-disclaimer__bottom {
   display: flex;
@@ -715,7 +733,7 @@ body {
 }
 #es-essentia.es-essentia .es-disclaimer__mat {
   color: #506f13;
-  font-weight: 500;
+  font-family: "Oswald-regular";
   font-size: 16px;
   margin-left: 20px;
 }
@@ -779,7 +797,7 @@ body {
     color: #fff;
   }
   #es-essentia.es-essentia .es-nav__link {
-    font-weight: 500;
+    font-family: "Oswald-regular";
     text-align: center;
     color: #000;
     text-decoration: none;
@@ -889,6 +907,9 @@ body {
     display: grid;
     grid-template-columns: 23% 23% 23% 23%;
   }
+  #es-essentia.es-essentia .es-table__title {
+    font-size: 26px;
+  }
   #es-essentia.es-essentia .es-info__up {
     padding: 0;
   }
@@ -933,7 +954,7 @@ body {
   #es-essentia.es-essentia .es-comp__arrow {
     font-size: 36px;
     color: #fff;
-    font-weight: 500;
+    font-family: "Oswald-bold";
   }
   #es-essentia.es-essentia .es-comp__items {
     justify-content: space-around;

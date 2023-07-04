@@ -83,6 +83,9 @@ body {
   font-family: inherit;
   font-weight: inherit;
 }
+#es-essentia.es-essentia sup {
+  font-size: 60%;
+}
 #es-essentia.es-essentia .swiper-button-next,
 #es-essentia.es-essentia .swiper-button-prev {
   top: auto;
@@ -192,13 +195,13 @@ body {
   font-size: 16px;
 }
 #es-essentia.es-essentia .es-features__title .es-sup {
-  font-size: 16px;
+  font-size: 60%;
 }
 #es-essentia.es-essentia .es-features__text {
   font-size: 14px;
 }
 #es-essentia.es-essentia .es-features__text .es-sup {
-  font-size: 10px;
+  font-size: 60%;
 }
 #es-essentia.es-essentia .slideshow-container {
   max-width: 100%;
@@ -503,7 +506,7 @@ body {
   color: #506f13;
 }
 #es-essentia.es-essentia .es-info__desc .es-sup{
-  font-size: 16px;
+  font-size: 60%;
 }
 #es-essentia.es-essentia .es-info__down {
   background: url(https://s3.eu-central-1.amazonaws.com/cdn.rc-eu-central2.nexus.estorelabs.com/public/static/Essentia-Sanofi-Apteka-Zawiszy/img/slide-2-bg.jpg?dl=0) 100% 100%;
@@ -536,7 +539,7 @@ body {
 }
 
 #es-essentia.es-essentia .es-info__text .es-sup{
-  font-size: 16px;
+  font-size: 60%;
 }
 #es-essentia.es-essentia .es-info__text--doctor {
   max-width: 460px;
@@ -610,7 +613,7 @@ body {
   min-width: 600px;
 }
 #es-essentia.es-essentia .es-table table tbody tr td .es-sup{
-  font-size: 12px;
+  font-size: 60%;
 }
 #es-essentia.es-essentia .es-table table tbody tr td:first-child {
   background: #eaeaea;
@@ -690,7 +693,7 @@ body {
   font-family: "Oswald-regular";
 }
 #es-essentia.es-essentia .es-comp__title .es-sup{
-  font-size: 30px;
+  font-size: 60%;
 }
 #es-essentia.es-essentia .es-comp__items {
   display: flex;
@@ -711,7 +714,7 @@ body {
 }
 #es-essentia.es-essentia .es-comp__text {
   color: #fff;
-  font-family: "Oswald-bold";
+  font-family: "Oswald-regular";
   line-height: 1.5;
 }
 #es-essentia.es-essentia .es-comp__mg {
@@ -863,7 +866,7 @@ body {
     max-width: 30%;
   }
   #es-essentia.es-essentia .es-support__text .es-sup{
-    font-size: 16px;
+    font-size: 60%;
   }
   #es-essentia.es-essentia .es-support__icon {
     max-width: 100px;
@@ -876,7 +879,7 @@ body {
     max-width: 45%;
   }
   #es-essentia.es-essentia .es-support__subtitle .es-sup{
-    font-size: 16px;
+    font-size: 60%;
   }
   #es-essentia.es-essentia .es-support__desc {
     max-width: 36%;

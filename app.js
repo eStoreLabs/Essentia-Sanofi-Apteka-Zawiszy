@@ -22,8 +22,8 @@
     const linkFourth = document.querySelector('.es-info__link--fourth')
 
     let slideIndex = [1,1];
-    let slideId = ["es-mySlides", "es-mySlides2"]
-    let dotId = ["es-dot", "es-dot2"]
+    let slideId = ['es-mySlides', 'es-mySlides2']
+    let dotId = ['es-dot', 'es-dot2']
 
     function plusSlides(n, no) {
       showSlides(slideIndex[no] += n, no);
@@ -39,13 +39,13 @@
       if (n > x.length) {slideIndex[no] = 1}
       if (n < 1) {slideIndex[no] = x.length}
       for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
+        x[i].style.display = 'none';
       }
        for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" es-active", "");
+        dots[i].className = dots[i].className.replace(' es-active', '');
       }
-      x[slideIndex[no]-1].style.display = "block";
-      dots[slideIndex[no]-1].className += " es-active";
+      x[slideIndex[no]-1].style.display = 'block';
+      dots[slideIndex[no]-1].className += ' es-active';
     }
 
     showSlides(1, 0);

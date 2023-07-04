@@ -736,6 +736,17 @@ body {
   margin: 5px 0;
   font-size: 16px;
 }
+#es-essentia.es-essentia .es-video {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  aspect-ratio: 16/9;
+  padding: 1rem;
+}
+#es-essentia.es-essentia .es-video iframe {
+  width: 100%;
+  height: 100%;
+}
 #es-essentia.es-essentia .es-disclaimer {
   padding: 14px;
 }
